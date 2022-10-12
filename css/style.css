@@ -1,7 +1,10 @@
 body {
-  margin: 0;
+  margin: 15px 0 0 0;
   padding: 0;
   font-family: 'Roboto', Arial, sans-serif;
+  color: #333;
+  font-size: 16px;
+  line-height: 130%;
 }
 
 * {
@@ -36,27 +39,31 @@ img {
 
 header {
   background-color: #333;
-  padding: 15px;
+  padding: 20px 30px;
   display: flex;
   align-items: center;
 }
 
 header .logo {
-  width: 70%;
+  width: 60%;
 }
 
 header nav {
-  width: 30%;
+  width: 40%;
+  font-weight: bold;
 }
 
 
 header ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
 }
 
 header nav ul li {
   list-style-type: none;
+  margin-left: 20px;
 }
 
 header nav ul li a {
@@ -73,4 +80,52 @@ section .time-left {
   background-color: #eee;
   font-size: 25px;
   margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.product-detail {
+  display: flex;
+}
+
+.product-detail .thumb {
+  width: 30%;
+  margin-right: 2%;
+}
+
+.product-detail .description {
+  width: 68%;
+  font-size: 15px;
+  padding-top: 5px;
+}
+
+.product-detail .description .item {
+  margin-bottom: 20px;
+}
+
+.product-detail .description .title {
+  font-weight: bold;
+}
+
+.product-detail .bid-wrap {
+  display: flex;
+}
+
+.product-detail .bid-wrap .bid-price {
+  margin-right: 30px;
+}
+
+.product-detail .bid-input {
+  padding: 15px;
+  border: 1px solid #666;
+  font-size: 20px;
+}
+
+.product-detail .bid-submit {
+  appearance: none;
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
 }
